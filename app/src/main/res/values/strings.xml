@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">h53.2 o\'quv markaz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kurslar">Kurslar</string>
+    <string name="guruhlar">Guruhlar</string>
+    <string name="mentorlar">Mentorlar</string>
+    <string name="ToqJuftKunlar">Toq kunlar : Dushanba, Chorshanba, Juma /n
+    Juft kunlar: Seshanba, Payshanba, Shanba</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ilhomjon.h532oquvmarkaz.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_barchaRoyhatFragment"
+            app:destination="@id/barchaRoyhatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/barchaRoyhatFragment"
+        android:name="com.ilhomjon.h532oquvmarkaz.BarchaRoyhatFragment"
+        android:label="fragment_barcha_royhat"
+        tools:layout="@layout/fragment_barcha_royhat" >
+        <action
+            android:id="@+id/action_barchaRoyhatFragment_to_kursHaqidaFragment"
+            app:destination="@id/kursHaqidaFragment" />
+        <action
+            android:id="@+id/action_barchaRoyhatFragment_to_mentorRoyhatFragment"
+            app:destination="@id/mentorRoyhatFragment" />
+        <action
+            android:id="@+id/action_barchaRoyhatFragment_to_guruhRoyhatFragment"
+            app:destination="@id/guruhRoyhatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kursHaqidaFragment"
+        android:name="com.ilhomjon.h532oquvmarkaz.KursHaqidaFragment"
+        android:label="fragment_kurs_haqida"
+        tools:layout="@layout/fragment_kurs_haqida" >
+        <action
+            android:id="@+id/action_kursHaqidaFragment_to_talabaQoshishFragment"
+            app:destination="@id/talabaQoshishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mentorRoyhatFragment"
+        android:name="com.ilhomjon.h532oquvmarkaz.MentorRoyhatFragment"
+        android:label="fragment_mentor_royhat"
+        tools:layout="@layout/fragment_mentor_royhat" />
+    <fragment
+        android:id="@+id/guruhRoyhatFragment"
+        android:name="com.ilhomjon.h532oquvmarkaz.GuruhRoyhatFragment"
+        android:label="fragment_guruh_royhat"
+        tools:layout="@layout/fragment_guruh_royhat" >
+        <action
+            android:id="@+id/action_guruhRoyhatFragment_to_yangiGuruhQoshishFragment"
+            app:destination="@id/yangiGuruhQoshishFragment" />
+        <action
+            android:id="@+id/action_guruhRoyhatFragment_to_guruhShowFragment"
+            app:destination="@id/guruhShowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yangiGuruhQoshishFragment"
+        android:name="com.ilhomjon.h532oquvmarkaz.YangiGuruhQoshishFragment"
+        android:label="fragment_yangi_guruh_qoshish"
+        tools:layout="@layout/fragment_yangi_guruh_qoshish" />
+    <fragment
+        android:id="@+id/talabaQoshishFragment"
+        android:name="com.ilhomjon.h532oquvmarkaz.TalabaQoshishFragment"
+        android:label="fragment_talaba_qoshish"
+        tools:layout="@layout/fragment_talaba_qoshish" />
+    <fragment
+        android:id="@+id/guruhShowFragment"
+        android:name="com.ilhomjon.h532oquvmarkaz.GuruhShowFragment"
+        android:label="fragment_guruh_show"
+        tools:layout="@layout/fragment_guruh_show" >
+        <action
+            android:id="@+id/action_guruhShowFragment_to_editTalabaFragment"
+            app:destination="@id/editTalabaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editTalabaFragment"
+        android:name="com.ilhomjon.h532oquvmarkaz.EditTalabaFragment"
+        android:label="fragment_edit_talaba"
+        tools:layout="@layout/fragment_talaba_qoshish" />
+</navigation>
